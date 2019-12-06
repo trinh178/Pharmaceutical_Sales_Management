@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F1F84CC-A202-4496-BEFC-30801CCA1C5A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project01</RootNamespace>
+    <AssemblyName>Project01</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\ControlHoaDon.cs" />
+    <Compile Include="Controllers\ControlNhaCungCap.cs" />
+    <Compile Include="Controllers\ControlNhaSanXuat.cs" />
+    <Compile Include="Controllers\ControlNhomThuoc.cs" />
+    <Compile Include="Controllers\ControlThuoc.cs" />
+    <Compile Include="Const.cs" />
+    <Compile Include="Models\ControlData.cs" />
+    <Compile Include="Models\Entities\ChiTietHoaDon.cs" />
+    <Compile Include="Models\Data.cs" />
+    <Compile Include="Models\Entities\DonThuoc.cs" />
+    <Compile Include="Models\Entities\HoaDon.cs" />
+    <Compile Include="Views\Dialogs\fmChonNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmChonNCC.Designer.cs">
+      <DependentUpon>fmChonNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmChonThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmChonThuoc.Designer.cs">
+      <DependentUpon>fmChonThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmPopupNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmPopupNCC.Designer.cs">
+      <DependentUpon>fmPopupNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmPopupNSX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmPopupNSX.Designer.cs">
+      <DependentUpon>fmPopupNSX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmPopupNThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmPopupNThuoc.Designer.cs">
+      <DependentUpon>fmPopupNThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmPopupThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmPopupThuoc.Designer.cs">
+      <DependentUpon>fmPopupThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmPopupHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmPopupHoaDon.Designer.cs">
+      <DependentUpon>fmPopupHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmChonNSX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmChonNSX.Designer.cs">
+      <DependentUpon>fmChonNSX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmChonNThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\fmChonNThuoc.Designer.cs">
+      <DependentUpon>fmChonNThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\fmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\fmMain.Designer.cs">
+      <DependentUpon>fmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\NhaCungCap.cs" />
+    <Compile Include="Models\Entities\NhaSanXuat.cs" />
+    <Compile Include="Models\Entities\NhomThuoc.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\Entities\Thuoc.cs" />
+    <EmbeddedResource Include="Views\Dialogs\fmChonNCC.resx">
+      <DependentUpon>fmChonNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\fmChonThuoc.resx">
+      <DependentUpon>fmChonThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\fmPopupNCC.resx">
+      <DependentUpon>fmPopupNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\fmPopupNSX.resx">
+      <DependentUpon>fmPopupNSX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\fmPopupNThuoc.resx">
+      <DependentUpon>fmPopupNThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\fmPopupThuoc.resx">
+      <DependentUpon>fmPopupThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\fmPopupHoaDon.resx">
+      <DependentUpon>fmPopupHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\fmChonNSX.resx">
+      <DependentUpon>fmChonNSX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\fmChonNThuoc.resx">
+      <DependentUpon>fmChonNThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\fmMain.resx">
+      <DependentUpon>fmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
